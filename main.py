@@ -1,31 +1,27 @@
-def fibo(num) -> int:
-    res = 1
-    for i in range(1, num + 1):
-        res *= i
-    return res
+from random import randint
 
+def arr()->list:
+    lst = [randint(-10, 30) for i in range(randint(5, 15))]
+    return lst
 
-def ameba(hours) -> int:
-    res = 1
-    for i in range(1, int(hours / 3) + 1):
-        res *= 2
-    return res
+def task_1()->int:
+    summa = 0
+    lst = arr()
+    for i in lst:
+        if i > 0:
+            summa += i
+    return lst
 
+def task_2():
+    lst = [randint(-30, 10) for i in range(30)]
+    summa = 0
+    for i in lst:
+        if i > 0:
+            break
+        else:
+            summa += i
+    return summa
 
-def bank() -> tuple:
-    money = 1000
-    growth = 0
-    for i in range(10):
-        growth += 1000 * 0.02
-    profit = money
-    for i in range(12):
-        profit += money * 0.02
-    return growth, profit
-
-
-if __name__ == "__main__":
-    # num = int(input('Input '))
-    # print(fibo(num))
-    # count_hours = int(input('Input hours '))
-    # print(ameba(12))
-    print(bank())
+if __name__ == '__main__':
+    print(task_1())
+    print(task_2())
