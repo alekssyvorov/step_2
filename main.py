@@ -103,6 +103,7 @@ def task_11():
                 print(' ', end='')
         print()
 
+
 def task_12():
     for i in range(11):
         for j in range(11):
@@ -111,6 +112,8 @@ def task_12():
             else:
                 print(' ', end='')
         print()
+
+
 def task_13():
     for i in range(10):
         for j in range(10):
@@ -174,8 +177,9 @@ def task_18():
 def task_19():
     print('*' * 11)
     for i in range(1, 10):
-        print('*' + " " * i + '*'*(10-i))
+        print('*' + " " * i + '*' * (10 - i))
     print('*' * 11)
+
 
 if __name__ == '__main__':
     # task_1()
